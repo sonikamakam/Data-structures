@@ -3,7 +3,8 @@
 typedef struct{
  
     char name[20];
-    int id;
+    int age;
+    int phone_number;
     int salary;
  
 } Employee;
@@ -20,13 +21,12 @@ int main()
     for(i=0; i<n; i++){
  
         printf("Employee %d:- \n",i+1);
-        //Name
         printf("Name: ");
         scanf("%s",employees[i].name);
-        //ID
-        printf("Id: ");
-        scanf("%d",&employees[i].id);
-        //Salary
+        printf("age: ");
+        scanf("%d",&employees[i].age);
+        printf("phone_number: ");
+        scanf("%d",&employees[i]. phone_number);
         printf("Salary: ");
         scanf("%d",&employees[i].salary);
  
@@ -42,8 +42,11 @@ int main()
         printf("Name \t: ");
         printf("%s \n",employees[i].name);
  
-        printf("Id \t: ");
-        printf("%d \n",employees[i].id);
+        printf("age \t: ");
+        printf("%d \n",employees[i].age);
+        
+        printf("phone_number \t: ");
+        printf("%d \n",employees[i].phone_number);
  
         printf("Salary \t: ");
         printf("%d \n",employees[i].salary);
